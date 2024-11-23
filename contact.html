@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <style>
+        /* .contact_form{
+            display: flex;
+            flex-direction: column;
+        } */
+
+        footer{
+            background: linear-gradient(180deg, #0567c2, #140b8b, #0567c2);
+            padding: 3px;
+        }
+
+        header,footer{
+            background: linear-gradient(180deg, #0567c2, #140b8b, #0567c2);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        nav>ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li ul{
+            display: none;
+            background-color: rgb(46, 191, 191);
+            position: absolute;
+            z-index: 999;
+        }
+
+        nav ul li:hover ul{
+            display: block;
+            box-shadow: 2px 2px 8px blue;
+
+        }
+
+        nav ul li ul li{
+            display: inline-block;
+        }
+
+        nav ul li ul a {
+            padding: 0%;  
+        }
+
+        nav ul li ul {
+            padding: 0%;  
+        }
+
+        nav ul li ul li a{
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav ul li {
+            width: 200px;
+            position: relative;
+        }
+
+        nav ul li a{
+            color: white;
+        }
+
+        nav ul li ul li{  
+            text-align: center;
+            list-style: none;
+            padding: 0px
+        }
+        .contact_section{
+            min-height: 100vh;
+            display: flex;
+        }
+        .contact_main{
+            width: 80%;
+        }
+        .contact_main form{
+            height: 100%;
+        }
+        .contact_aside, .contact_aside a{
+            color: white;
+            background-image: url('images/contact/aside.jpg');
+        }
+
+        @media (max-width: 767px) {
+            .contact_section{
+                flex-direction: column;
+            }
+            .contact_aside{
+                background-image: url('images/contact/aside2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="order.html">Lists</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>     
+                </li>
+            </ul>
+        </nav>
+        <h2>Contact</h2>
+    </header>
+    <section class="contact_section">
+        <main class="contact_main">
+            <form class="d-flex flex-sm-column text-bg-success p-5 " novalidate>
+                <label class="p-2 mt-2 text-bg-primary" for="user_name">User Name:</label>
+                <input minlength="4" maxlength="15" class="p-2" type="text" name="user_name" id="user_name" required>
+               
+                <label class="p-2 mt-2 text-bg-primary" for="email">Email:</label>
+                <input minlength="5" maxlength="20" class="p-2 " type="email" name="email" id="email" required>
+
+                <label class="p-2 mt-2 text-bg-primary" for="date">Date:</label>
+                <input min="18" max="100" class="p-2" type="date" name="date" id="date" required>
+
+                <label class="p-2 mt-2 text-bg-primary" for="color">Color:</label>
+                <input class="p-2 " type="color" name="color" id="color" required>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </main>
+        <aside class="contact_aside">
+            <h2>All kinds of Emails</h2>
+            <ul>
+                <li><a href="https://mail.google.com">Gmail</a></li>
+                <li><a href="https://outlook.com">Outlook</a></li>
+                <li><a href="https://login.yahoo.com/?.src=ym&lang=zh-CN&done=https%3A%2F%2Fmail.yahoo.com%2F%3Fguce_referrer%3DaHR0cHM6Ly9jaGF0Z3B0LmNvbS8%26guce_referrer_sig%3DAQAAAJ-skVzZFmSHnQK0tgn348JN5_2jcfKAvXy0Q_whDCaotirvGwxF2TlsXbc_9BcQ_rvPgPXL3LKAF-wru31-WKPolU-1GhgkVPrgo52-rm-a1adBXBQA98LO5J8fAoiuAo_JBKJ66jlNdz4tBDAPMaGfmPt-v-UY90gcmvv8skUL">Yahoo</a></li>
+                <li><a href="https://www.icloud.com/mail">Apple Mail</a></li>
+                <li><a href="https://proton.me/mail">ProtonMail</a></li>
+                <li><a href="https://www.zoho.com/mail/">Zoho Mail</a></li>
+            </ul>
+        </aside>
+    </section>
+    <footer >
+        <p>&copy; 2024 name: Xuanyu Wang E-mail: Xwang0543@conestogac.on.ca</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

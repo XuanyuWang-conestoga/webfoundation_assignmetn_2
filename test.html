@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        --gutter-x:2px;
+        --gutter-y:2px;
+      }
+
+      .row>*{
+        padding: 0px var(--gutter-x);
+        margin-top: var(--gutter-y);
+      }
+
+      .g-1{
+        --gutter-x:4px;
+        --gutter-y:4px;
+      }
+
+      .g-2{
+        --gutter-x:6px;
+        --gutter-y:6px;
+      }
+      .g-3{
+        --gutter-x:8px;
+        --gutter-y:8px;
+      }
+
+      .row-cols-2>*{
+        width: 50%;
+        box-sizing: border-box
+      }
+
+      .row-cols-3>*{
+        width: 33.33333%;
+        box-sizing: border-box
+      }
+      img{
+        width: 100%;
+
+      }
+    </style>
+</head>
+<body>
+    <section class="row row-cols-3 g-3">
+        <div>
+            <img src="images/home/747.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/home/747.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/home/747.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/home/747.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/home/747.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/home/747.jpg" alt="">
+        </div>
+      
+    </section>
+</body>
+</html>
