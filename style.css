@@ -1,3 +1,8 @@
+html{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
 body{
     border: solid black 2px;
     border-radius: 20px;
@@ -86,6 +91,7 @@ tr:hover{
 
 blockquote{
     font-size: 1.5rem;
+    color: white;
 }
 blockquote> footer{
     background-color: inherit;
@@ -178,13 +184,15 @@ blockquote{
 .index_main{
     background-color: #3395db;
 }
-.text{
+.index_text{
+    color:black;
     width: 100%;
 }
 .index_aside{
     margin-left: 20px;
     padding: 5px;
-    width: 34%;
+    width: 70%;
+    color: black;
     background-image: url('images/home/aside.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,8 +263,12 @@ iframe {
 
 
 
-
 @media (max-width: 767px) {
+    html{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
     .index_section{
         flex-direction: column;
     }
