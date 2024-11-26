@@ -27,14 +27,14 @@ nav>ul{
 
 nav ul li ul{
     display: none;
-    background-color: rgb(46, 191, 191);
+    background-color:cadetblue;
     position: absolute;
     z-index: 999;
 }
 
 nav ul li:hover ul{
     display: block;
-    box-shadow: 2px 2px 8px blue;
+    box-shadow: 2px 2px 8px cadetblue;
 
 }
 
@@ -102,6 +102,11 @@ blockquote> footer{
     background-color:cadetblue;
 }
 
+.index_text p a{
+    color: white;
+}
+
+
 header img{
     width: 150px;
 }
@@ -120,6 +125,10 @@ h4{
 
 h2,h1{
     padding-left: 10px;
+}
+
+header h2{
+    margin-right: 15px;
 }
 .nav{
     margin: 20px auto;
@@ -224,6 +233,10 @@ blockquote{
     background-size:cover;
     width: 20%;
 }
+
+.gallery_aside a{
+    color: black;
+}
 .gallery_section{
     display: flex;
     gap: 10px;
@@ -259,8 +272,21 @@ iframe {
     color: white;
 }
 
-
-
+/* --------------------------------- contact */
+.contact_section{
+    min-height: 100vh;
+    display: flex;
+}
+.contact_main{
+    width: 80%;
+}
+.contact_main form{
+    height: 100%;
+}
+.contact_aside, .contact_aside a{
+    color: white;
+    background-image: url('images/contact/aside.jpg');
+}
 
 
 @media (max-width: 767px) {
@@ -303,5 +329,16 @@ iframe {
     .media_aside{
         width: 100%;
         background-image: url('images/media/aside2.jpg');
+    }
+
+    .contact_main{
+        width: 100%;
+    }
+
+    .contact_section{
+        flex-direction: column;
+    }
+    .contact_aside{
+        background-image: url('images/contact/aside2.jpg');
     }
 }
