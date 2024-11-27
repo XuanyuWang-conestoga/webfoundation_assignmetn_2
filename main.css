@@ -235,11 +235,47 @@ blockquote{
 }
 
 .gallery_aside a{
-    color: black;
+    color:black;
+    background-color: white;
+    font-weight: bold;
 }
 .gallery_section{
     display: flex;
     gap: 10px;
+}
+
+figcaption{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#gallery_img_1 {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+#gallery_img_2 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+#gallery_img_3 {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+#gallery_img_4 {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+#gallery_img_5 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 60% 50%, 60% 100%, 0% 100%);
+}
+#gallery_img_6 {
+    clip-path: polygon(50% 0%, 100% 30%, 80% 100%, 50% 80%, 20% 100%, 0% 30%);
+}
+#gallery_img_7 {
+    clip-path: polygon(10% 0%, 90% 0%, 100% 40%, 60% 100%, 0% 60%);
+}
+#gallery_img_8 {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+#gallery_img_9 {
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
 }
 
 /* -------------------------------------- mdiea */
@@ -288,6 +324,10 @@ iframe {
     background-image: url('images/contact/aside.jpg');
 }
 
+.contact_aside h2{
+    background-color: white;
+    color: black;
+}
 
 @media (max-width: 767px) {
     html{
@@ -316,6 +356,10 @@ iframe {
         width: 100%;
         background-image: url('images/gallery/aside2.jpg');
     }
+    .gallery_aside h2{
+        color: white;
+        background-color: black;
+    }
 
     .gallery_main{
         grid-template-columns: repeat(1,1fr);
@@ -329,6 +373,9 @@ iframe {
     .media_aside{
         width: 100%;
         background-image: url('images/media/aside2.jpg');
+    }
+    .media_aside ul li a{
+        background-color: black;
     }
 
     .contact_main{
